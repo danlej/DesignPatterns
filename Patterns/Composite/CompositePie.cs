@@ -1,4 +1,4 @@
-namespace DesignPatterns.Patterns;
+namespace DesignPatterns.Patterns.Composite;
 
 public class CompositePie : Component
 {

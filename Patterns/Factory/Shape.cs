@@ -1,4 +1,4 @@
-namespace DesignPatterns.Patterns;
+namespace DesignPatterns.Patterns.Factory;
 
 public abstract class Shape
 {

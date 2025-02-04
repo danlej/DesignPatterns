@@ -1,4 +1,4 @@
-namespace DesignPatterns.Patterns;
+namespace DesignPatterns.Patterns.State;
 
 public abstract class ServerState
 {

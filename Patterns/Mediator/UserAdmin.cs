@@ -1,4 +1,4 @@
-namespace DesignPatterns.Patterns;
+namespace DesignPatterns.Patterns.Mediator;
 
 public class UserAdmin : IColleague
 {
