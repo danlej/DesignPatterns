@@ -15,7 +15,7 @@ public class Prototype : ICloneable
                 Color = Rasgos?.Color,
                 Raza = Rasgos?.Raza
             };
-        return clone ?? new Object();
+        return clone ?? new object();
     }
 }
 
