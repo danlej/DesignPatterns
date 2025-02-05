@@ -6,17 +6,17 @@ public class Mediator : IMediator
 
     public Mediator()
     {
-        colleagues = new List<IColleague>();
+        colleagues = [];
     }
 
     public void Add(IColleague colleague)
     {
-        this.colleagues.Add(colleague);
+        colleagues.Add(colleague);
     }
 
     public void Send(string message, IColleague colleague)
     {
-        foreach (var c in this.colleagues)
+        foreach (var c in colleagues)
         {
             if (colleague != c)
             {

@@ -1,17 +1,14 @@
 namespace DesignPatterns.Patterns.Mediator;
 
-public abstract class IColleague
+public abstract class IColleague(IMediator _mediator, string _name)
 {
-    private IMediator mediator;
+    private readonly IMediator mediator = _mediator;
 
-    public IMediator Mediator
+    protected readonly string name = _name;
+
+    public IMediator? Mediator
     {
         get;
-    }
-
-    public IColleague(IMediator _mediator)
-    {
-        this.mediator = _mediator;
     }
 
     public void Communicate(string message)
@@ -21,3 +18,4 @@ public abstract class IColleague
 
     public abstract void Receive(string message);
 }
+

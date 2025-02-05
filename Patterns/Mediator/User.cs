@@ -1,14 +1,9 @@
 namespace DesignPatterns.Patterns.Mediator;
 
-public class User : IColleague
+public class User(IMediator mediator, string _name) : IColleague(mediator, _name)
 {
-    public User(IMediator mediator) : base(mediator)
-    {
-
-    }
-
     public override void Receive(string message)
     {
-        Console.WriteLine($"Un Usuario recibe: {message}");
+        Console.WriteLine($"Un Usuario ({name}) recibe: {message}");
     }
 }
