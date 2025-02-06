@@ -6,7 +6,7 @@ public class StrategyTest
     {
         // Version 1
         Console.WriteLine("Versión 1:");
-        StrategySortingContext sortable = new StrategySortingContext();
+        StrategySortingContext sortable = new();
         sortable.Sort();
         sortable.SetQuickSortStrategy();
         sortable.Sort();

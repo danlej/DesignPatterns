@@ -1,12 +1,12 @@
 namespace DesignPatterns.Patterns.Composite;
 
-public class Ingredient : Component
+public class Leaf : Component
 {
     public int Quantity { get; set; }
 
     public string? Unit { get; set; }
 
-    public Ingredient(string _name, decimal _cost, int _quantity, string _unit)
+    public Leaf(string _name, decimal _cost, int _quantity, string _unit)
         : base(_name, _cost)
     {
         Quantity = _quantity;

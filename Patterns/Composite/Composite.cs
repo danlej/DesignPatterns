@@ -1,10 +1,10 @@
 namespace DesignPatterns.Patterns.Composite;
 
-public class CompositePie : Component
+public class Composite : Component
 {
-    private List<Component> Ingredients = new();
+    private List<Component> Ingredients = [];
 
-    public CompositePie(string _name, decimal _cost = 0) : base(_name, _cost)
+    public Composite(string _name, decimal _cost = 0) : base(_name, _cost)
     {
 
     }
@@ -16,8 +16,8 @@ public class CompositePie : Component
             decimal _cost = 0;
             foreach (var item in Ingredients)
             {
-                if (item.GetType().Name == "CompositePie")
-                    _cost += ((CompositePie)item).TotalCost;
+                if (item.GetType().Name == "Composite")
+                    _cost += ((Composite)item).TotalCost;
                 else
                     _cost += item.Cost;
             }

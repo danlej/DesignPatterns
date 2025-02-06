@@ -1,8 +1,8 @@
 namespace DesignPatterns.Patterns.State;
 
-public class ServerContext
+public class HttpServer
 {
-    private ServerState state;
+    private ServerState state = new AvailableServerState();
 
     public ServerState State
     {

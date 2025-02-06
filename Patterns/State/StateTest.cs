@@ -4,10 +4,12 @@ public class StateTest
 {
     public static void Run()
     {
-        ServerContext server = new()
-        {
-            State = new AvailableServerState()
-        };
+        // ServerContext server = new()
+        // {
+        //     State = new AvailableServerState()
+        // };
+
+        HttpServer server = new();
 
         server.AttendRequest();
 
