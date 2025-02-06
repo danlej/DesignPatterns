@@ -9,7 +9,7 @@ public class Mediator : IMediator
         colleagues = [];
     }
 
-    public void Add(IColleague colleague)
+    public void Register(IColleague colleague)
     {
         colleagues.Add(colleague);
     }
