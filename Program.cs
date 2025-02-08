@@ -1,7 +1,10 @@
 ﻿
+using DesignPatterns.Patterns.Proxy;
+using DesignPatterns.Patterns.ProxyHttp;
+
 class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         // Aquí llamas al método Run() del patrón que quieras probar.
         // Ejemplo: SingletonTest.Run();
@@ -10,8 +13,10 @@ class Program
         //PrototypeTest.Run();
         // FactoryTest.Run();
         // StrategyTest.Run();
-        MediatorTest.Run();
+        // MediatorTest.Run();
         // StateTest.Run();
         // CompositeTest.Run();
+        // ProxyTest.Run();
+        await ProxyHttpTest.RunAsync();
     }
 }
